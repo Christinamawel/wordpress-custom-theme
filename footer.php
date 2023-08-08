@@ -1,3 +1,4 @@
+</section>
 
 <?php wp_footer(); ?>
 

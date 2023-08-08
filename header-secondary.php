@@ -9,5 +9,3 @@
   
 </head>
 <body>
-
-  This is the second header
