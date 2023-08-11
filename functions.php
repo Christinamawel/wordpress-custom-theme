@@ -10,6 +10,8 @@ function load_css() {
 add_action('wp_enqueue_scripts', 'load_css');
 
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
+
 
 register_nav_menus(
   array(
@@ -17,5 +19,8 @@ register_nav_menus(
     'mobile-menu' => 'Mobile Menu Location',
   )
 );
+
+add_image_size('blog-large', 9999, 400, false);
+add_image_size('blog-small', 150, 150, true);
 
 ?>
