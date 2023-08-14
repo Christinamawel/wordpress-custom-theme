@@ -1,6 +1,13 @@
 </section>
 
-<?php wp_footer(); ?>
+    <footer>
 
+    <p>footer</p>
+
+    <?php wp_footer(); ?>
+
+    </footer>
+
+  </div>
 </body>
 </html>

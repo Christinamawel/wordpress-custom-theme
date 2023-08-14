@@ -10,19 +10,25 @@
 </head>
 <body>
 
+<div class="wrapper">
+
   <header>
 
-  <div class="container">
-    <?php 
-    wp_nav_menu(
-      array(
-        'theme_location' => 'top-menu',
-        'menu_class' => 'top-bar'
-      )
-    );
-    ?>
+  <div class="nav-width-container">
+
+    <div class="nav-container">
+      <?php 
+      wp_nav_menu(
+        array(
+          'theme_location' => 'top-menu',
+          'menu_class' => 'top-bar'
+        )
+      );
+      ?>
+    </div>
+
   </div>
 
   </header>
 
-  <section class="page-wrap container">
+  <section class="container">

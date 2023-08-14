@@ -1,6 +1,17 @@
 body {
   background-color: azure;
   margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.wrapper {
+  position:relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100vw;
 }
 
 header {
@@ -8,29 +19,74 @@ header {
   width: 100%;
   height: 5em;
   display: flow-root;
+  position: absolute;
+  top: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 3em;
+  width:100%;
+  background-color: rgb(41, 41, 41);
 }
 
 .container {
   max-width: 900px;
   margin: 0 auto;
+  position: absolute;
+  top: 5em;
+  bottom: 4em;
+  overflow-y : auto;
+  padding: 0 1em;
+  display: flow-root;
 }
 
 .flex {
   display: flex;
   width: 100%;
-  justify-content: space-around;
 }
 
-header .container {
+.flex-small-gap {
+  gap: 2em;
+}
+
+.widget {
+  list-style-type: none;
+}
+
+.nav-width-container {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.nav-container {
   display: flex;
   align-items:center;
   height: 100%;
-  padding-left: 1em;
 }
 
-.page-wrap {
-  padding: 0 1em;
-  display: flow-root;
+.sidebar {
+  background-color: rgb(41, 41, 41);
+  border-radius: .5em;
+  color: white;
+  padding: 1em;
+  margin-top: 1em;
+  height: 98%;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar ul a:hover {
+  color: rgb(188, 188, 188);
 }
 
 .top-bar {
